@@ -1,0 +1,1 @@
+javascript:!function(){var i=window.location.href;return 0===i.indexOf("https://magic.import.io")?(window.alert("magic.import.io is already loaded!"),!1):void window.open("https://magic.import.io/?site="+encodeURIComponent(i),"_blank")}();
