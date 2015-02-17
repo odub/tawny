@@ -1,0 +1,1 @@
+window.onload=function(){var e=document.getElementById("bookmarklet-explain"),t=document.getElementById("bookmarklet-button");t.addEventListener("mouseover",function(){e.className+="active"}),t.addEventListener("mouseout",function(){e.className=e.className.replace(/(?:^|\s)active(?!\S)/g,"")})};

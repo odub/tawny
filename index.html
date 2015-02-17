@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tawny</title>
+        <!-- inject:css -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- endinject -->
+        <!-- inject:js -->
+        <script src="js/main.js"></script>
+        <!-- endinject -->
+
+    </head>
+    <body>
+        <div id="bookmarklet-explain">Click and drag up to your Bookmarks Bar</div>
+        <div class="container">
+            <h1>
+                Magic Bookmarklet
+                <br/>
+                <small>One-click data extraction</small>
+            </h1>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr />
+                    <h3>
+                        <a id="bookmarklet-button" class="btn btn-lg btn-primary col-xs-12 col-sm-5 col-md-4" role="button" href="javascript:!function(){var i=window.location.href;return 0===i.indexOf('https://magic.import.io')?(window.alert('magic.import.io is already loaded!'),!1):void window.open('https://magic.import.io/?site='+encodeURIComponent(i),'_blank')}();" onclick="return false;">Extract data with import.io</a>
+                        <small  id="install-text" class="col-sm-7 col-md-8">
+                        <br class="visible-xs"/><span class="hidden-xs">← </span>Add this to your Bookmarks Bar</small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
