@@ -35,8 +35,40 @@
 	text-transform: none;
 }
 
-// 
+// CUSTOM STYLES
 
 #install-text {
 	padding-top: 9px;
+}
+
+#bookmarklet-explain:before {
+  content: "↑";
+}
+
+#bookmarklet-explain::before {
+  padding-right: 1rem;
+}
+
+#bookmarklet-explain {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background: @brand-primary;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  transition: all 300ms ease-out;
+}
+
+#bookmarklet-explain.active {
+  padding: 0.6rem 0;
+  height: 4rem;
+}
+
+body > .container {
+  margin-top: 4rem;
 }
