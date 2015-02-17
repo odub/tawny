@@ -63,7 +63,7 @@ gulp.task('inject', ['html', 'styles', 'scripts'], function () {
 var bookmarklet;
 gulp.task('deploy-bookmarklet', ['inject'], function () {
     var debug = true;
-    var bookmarklet = fs.readFileSync('./dist/bookmarklet.js', 'utf8').replace(/"/g, '\'')
+    var bookmarklet = fs.readFileSync('./dist/bookmarklet.js', 'utf8').replace(/"/g, '\'');
     console.log('BOOKMARKLET:', bookmarklet);
 
     return gulp.src('./dist/index.html')
