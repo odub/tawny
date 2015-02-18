@@ -5,5 +5,5 @@
   	window.alert('magic.import.io is already loaded!');
   	return false;
   }
-  window.open('https://magic.import.io/?site='+encodeURIComponent(url), '_blank');
+  window.open('https://magic.import.io/?site='+encodeURIComponent(url)+'&utm_source=bm&utm_medium=bm&utm_campaign=oscarbookmarklet', '_blank');
 }());
