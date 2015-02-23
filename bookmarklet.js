@@ -1,1 +1,1 @@
-javascript:!function(){var i=window.location.href;return 0===i.indexOf("https://magic.import.io")?(window.alert("magic.import.io is already loaded!"),!1):void window.open("https://magic.import.io/?site="+encodeURIComponent(i),"_blank")}();
+javascript:!function(){var o=window.location.href;return 0===o.indexOf("https://magic.import.io")?(window.alert("magic.import.io is already loaded!"),!1):void window.open("https://magic.import.io/?site="+encodeURIComponent(o)+"&utm_source=bm&utm_medium=bm&utm_campaign=oscarbookmarklet","_blank")}();
