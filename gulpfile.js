@@ -15,10 +15,6 @@ var replace = require('gulp-replace');
 var intercept = require('gulp-intercept');
 var fs = require('fs');
 
-gulp.task('html', function () {
-
-});
-
 gulp.task('less', function () {
   gulp.src('./src/styles/**/*.less')
     .pipe(less({
@@ -51,7 +47,7 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./dist/js'));
 });
 
-gulp.task('inject', ['html', 'styles', 'scripts'], function () {
+gulp.task('html', ['styles', 'scripts'], function () {
   var target = gulp.src('./src/index.html');
   var sources = gulp.src(['./**/*.css', './js/**/*.js'], {read: false, cwd: './dist'});
 
@@ -60,7 +56,7 @@ gulp.task('inject', ['html', 'styles', 'scripts'], function () {
 });
 
 var bookmarklet;
-gulp.task('deploy-bookmarklet', ['inject'], function () {
+gulp.task('deploy-bookmarklet', ['html'], function () {
     var debug = true;
     var bookmarklet = fs.readFileSync('./dist/bookmarklet.js', 'utf8').replace(/"/g, '\'');
     console.log('BOOKMARKLET:', bookmarklet);
@@ -80,8 +76,9 @@ gulp.task('scripts', ['bookmarklet', 'js']);
 
 gulp.task('default', ['clean', 'deploy-bookmarklet']);
 
+
 gulp.task('watch', ['default'], function() {
-  gulp.watch('src/**/*.html', ['inject']);
-  gulp.watch('src/**/*.less', ['inject']);
-  gulp.watch('src/**/*.js', ['inject']);
+  gulp.watch('src/**/*.html', ['deploy-bookmarklet']);
+  gulp.watch('src/**/*.less', ['deploy-bookmarklet']);
+  gulp.watch('src/**/*.js', ['deploy-bookmarklet']);
 });
