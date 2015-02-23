@@ -6,29 +6,48 @@
         <!-- inject:css -->
         <link rel="stylesheet" href="css/main.css">
         <!-- endinject -->
-        <!-- inject:js -->
-        <script src="js/main.js"></script>
-        <!-- endinject -->
-
     </head>
     <body>
         <div id="bookmarklet-explain">Click and drag up to your Bookmarks Bar</div>
         <div class="container">
-            <h1>
-                Import.io Bookmarklet
-                <br/>
-                <small>One-click data extraction</small>
-            </h1>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>
+                        <a href="https://magic.import.io/" title="import.io">import.io</a> Bookmarklet
+                        <br/>
+                        <small>One-click automatic data extraction</small>
+                    </h1>
+                    <br class="spacer" />
+                        <a id="bookmarklet-button" class="btn btn-lg btn-primary col-xs-12 col-sm-5 col-md-4" role="button" href="javascript:!function(){var i=window.location.href;return 0===i.indexOf('https://magic.import.io')?(window.alert('magic.import.io is already loaded!'),!1):void window.open('https://magic.import.io/?site='+encodeURIComponent(i)+'&utm_source=bm&utm_medium=bm&utm_campaign=bm','_blank')}();" onclick="return false;">Extract with import.io</a>
+                        <span  id="install-text" class="col-sm-7 col-md-8">
+                        <br class="visible-xs spacer"/><span class="hidden-xs">← </span>Drag this to your Bookmarks Bar</span>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-12">
                     <hr />
-                    <h3>
-                        <a id="bookmarklet-button" class="btn btn-lg btn-primary col-xs-12 col-sm-5 col-md-4" role="button" href="javascript:!function(){var o=window.location.href;return 0===o.indexOf('https://magic.import.io')?(window.alert('magic.import.io is already loaded!'),!1):void window.open('https://magic.import.io/?site='+encodeURIComponent(o)+'&utm_source=bm&utm_medium=bm&utm_campaign=oscarbookmarklet','_blank')}();" onclick="return false;">Extract with import.io</a>
-                        <small  id="install-text" class="col-sm-7 col-md-8">
-                        <br class="visible-xs"/><span class="hidden-xs">← </span>Drag this to your Bookmarks Bar</small>
-                    </h3>
+                    <h5>To try it out:</h5>
+                    <ol>
+                        <li>Drag the bookmarklet to your Bookmarks Bar</li>
+                        <li>Browse to a page containing a table or a list of items – try <a href="http://www.ikea.com/gb/en/search/?query=chairs" title="Ikea chairs">this one</a></li>
+                        <li>Click on the ‘Extract with import.io’ bookmarklet you just installed, then view and enjoy <a href="https://import.io/" title="import.io">import.io</a>'s automatically generated results</li>
+                    </ol>
+                    <p>That's it! As normal, use <a href="https://magic.import.io/">magic.import.io</a> to extract a data set or build a queryable API from a selected web page.</p>
+                    <!-- <hr /> -->
                 </div>
             </div>
         </div>
+        <!-- inject:js -->
+        <script src="js/main.js"></script>
+        <!-- endinject -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-2755097-4', 'auto');
+          ga('send', 'pageview');
+        </script>
     </body>
 </html>
