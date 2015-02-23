@@ -30,7 +30,7 @@ The source files for the project reside in the `src` directory. The `gulp` build
 * Compile any less stylesheets in `src/styles` into CSS and copy into `dist`
 * Minify any JavaScript in `src/scripts` and copy into `dist`
 * Minify the bookmarklet source JavaScript from `src/bookmarklet` and copy the minified code into `dist`
-* Inject the minified bookmarklet into the page for use! (The script replaces the placeholder text `###BOOKMARKLET###` in `dist/index.html`
+* Inject the minified bookmarklet into the page for use (the script replaces the placeholder text `###BOOKMARKLET###` in `dist/index.html`)
 
 #### To deploy the `dist` directory to GitHub Pages
 
