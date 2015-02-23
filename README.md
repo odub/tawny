@@ -1,6 +1,6 @@
 # tawny
 
-tawny is an open source bookmarklet for Import.io's automatic data extraction product "Magic".
+tawny is an open source launcher bookmarklet for [import.io](https://import.io/)'s automatic data extraction product "Magic".
 
 Install the bookmarklet [here](http://odub.github.io/tawny)!
 
@@ -35,6 +35,6 @@ The source files for the project reside in the `src` directory. The `gulp` build
 #### To deploy the `dist` directory to GitHub Pages
 
 * Commit and push the `dist` directory in the state you want to deploy
-* Run ```git subtree push --prefix dist origin gh-pages``` to push `dist` to the root of the `gh-pages` branch
+* Run `git subtree push --prefix dist origin gh-pages` to push `dist` to the root of the `gh-pages` branch
 
-The site at [https://github.com/odub/tawny](https://github.com/odub/tawny) should now be the same as the last committed version of the `dist` directory.
+The site at [http://odub.github.io/tawny/](http://odub.github.io/tawny/) should now be the same as the last committed version of the `dist` directory.
