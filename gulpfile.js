@@ -1,4 +1,3 @@
-// Generated on 2015-02-15 using generator-bookmarklet 1.1.0
 'use strict';
 
 var buffer = require('buffer');
@@ -78,8 +77,6 @@ gulp.task('clean', function () {
 gulp.task('styles', ['less']);
 
 gulp.task('scripts', ['bookmarklet', 'js']);
-
-// gulp.task('build', ['html', 'styles', 'scripts'])
 
 gulp.task('default', ['clean', 'deploy-bookmarklet']);
 
