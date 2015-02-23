@@ -7327,12 +7327,12 @@ select.form-control[multiple] {
   left: 0;
   right: 0;
   top: 0;
-  transition: all 300ms ease-out;
-  text-align: center;
   width: 100%;
   background: #ec3e82;
   font-size: 1.5rem;
   color: white;
+  text-align: center;
+  transition: all 300ms ease-out;
 }
 #bookmarklet-explain.active {
   padding: 0.6rem 0;
