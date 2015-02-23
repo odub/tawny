@@ -3,6 +3,12 @@
 @import "../../node_modules/bootswatch/paper/variables.less";
 @import "../../node_modules/bootswatch/paper/bootswatch.less";
 
+// BOOTSWATCH OVERRIDES
+
+// Text
+
+@font-size-base: 16px;
+
 // Colours
 
 @brand-primary: #EC3E82;
@@ -33,6 +39,8 @@
 
 .btn {
 	text-transform: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 // CUSTOM STYLES
@@ -47,6 +55,7 @@
 
 #bookmarklet-explain::before {
   padding-right: 1rem;
+  vertical-align: 1px;
 }
 
 #bookmarklet-explain {
@@ -57,18 +66,29 @@
   right: 0;
   top: 0;
   width: 100%;
-  background: @brand-primary;
-  font-size: 1.5rem;
+  background: darken(@brand-primary, 6%);
   color: white;
   text-align: center;
   transition: all 300ms ease-out;
 }
 
 #bookmarklet-explain.active {
-  padding: 0.6rem 0;
-  height: 4rem;
+  padding: 0.7rem 0;
+  height: 46px;
 }
 
 body > .container {
-  margin-top: 4rem;
+  margin-top: 3rem;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+br.spacer {
+  line-height: 8rem
+}
+
+br.spacer-small {
+  line-height: 3rem
 }

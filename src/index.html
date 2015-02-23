@@ -9,19 +9,30 @@
     <body>
         <div id="bookmarklet-explain">Click and drag up to your Bookmarks Bar</div>
         <div class="container">
-            <h1>
-                Import.io Bookmarklet
-                <br/>
-                <small>One-click data extraction</small>
-            </h1>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>
+                        <a href="https://magic.import.io/" title="import.io">import.io</a> Bookmarklet
+                        <br/>
+                        <small>One-click automatic data extraction</small>
+                    </h1>
+                    <br class="spacer" />
+                        <a id="bookmarklet-button" class="btn btn-lg btn-primary col-xs-12 col-sm-5 col-md-4" role="button" href="###BOOKMARKLET###" onclick="return false;">Extract with import.io</a>
+                        <span  id="install-text" class="col-sm-7 col-md-8">
+                        <br class="visible-xs spacer"/><span class="hidden-xs">← </span>Drag this to your Bookmarks Bar</span>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-12">
                     <hr />
-                    <h3>
-                        <a id="bookmarklet-button" class="btn btn-lg btn-primary col-xs-12 col-sm-5 col-md-4" role="button" href="###BOOKMARKLET###" onclick="return false;">Extract with import.io</a>
-                        <small  id="install-text" class="col-sm-7 col-md-8">
-                        <br class="visible-xs"/><span class="hidden-xs">← </span>Drag this to your Bookmarks Bar</small>
-                    </h3>
+                    <h5>To try it out:</h5>
+                    <ol>
+                        <li>Drag the bookmarklet to your Bookmarks Bar</li>
+                        <li>Browse to a page containing a table or a list of items – try <a href="http://www.ikea.com/gb/en/search/?query=chairs" title="Ikea chairs">this one</a></li>
+                        <li>Click on the ‘Extract with import.io’ bookmarklet you just installed, then view and enjoy <a href="https://import.io/" title="import.io">import.io</a>'s automatically generated results</li>
+                    </ol>
+                    <p>That's it! As normal, use <a href="https://magic.import.io/">magic.import.io</a> to extract a data set or build a queryable API from a selected web page.</p>
+                    <!-- <hr /> -->
                 </div>
             </div>
         </div>
