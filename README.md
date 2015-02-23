@@ -19,7 +19,7 @@ Install the bookmarklet [here](http://odub.github.io/tawny)!
 
 * Clone this repository to you development directory
 * `cd` to the new directory
-* Run `npm install` to run install dependencies (you may have to install `npm` if you don't have it, the simplest way is via the ruby gem)
+* Run `npm install` to run install dependencies (you may have to install [Node.js](http://nodejs.org/) if you don't already have it)
 
 #### Working with the build script
 
@@ -28,7 +28,7 @@ The source files for the project reside in the `src` directory. The `gulp` build
 * Clear the `dist` directory removing previous builds
 * Copy the markup directly into `dist`
 * Compile any less stylesheets in `src/styles` into CSS and copy into `dist`
-* Compile any JavaScript in `src/scripts` into CSS and copy into `dist`
+* Minify any JavaScript in `src/scripts` and copy into `dist`
 * Minify the bookmarklet source JavaScript from `src/bookmarklet` and copy the minified code into `dist`
 * Inject the minified bookmarklet into the page for use! (The script replaces the placeholder text `###BOOKMARKLET###` in `dist/index.html`
 
