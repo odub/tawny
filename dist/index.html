@@ -18,7 +18,7 @@
                         <small>One-click data extraction</small>
                     </h1>
                     <br class="spacer" />
-                        <a id="bookmarklet-button" class="btn btn-lg btn-primary col-xs-12 col-sm-5 col-md-4" role="button" href="javascript:!function(){var i=window.location.href;return 0===i.indexOf('https://magic.import.io')?(window.alert('magic.import.io is already loaded!'),!1):void window.open('https://magic.import.io/?site='+encodeURIComponent(i)+'&utm_source=bm&utm_medium=bm&utm_campaign=bm','_blank')}();" onclick="return false;">Extract with import.io</a>
+                        <a id="bookmarklet-button" class="btn btn-lg btn-primary col-xs-12 col-sm-5 col-md-4" role="button" href="javascript:!function(){var i=window.location.href;return 0===i.indexOf('https://magic.import.io')?(window.alert('magic.import.io is already loaded!'),!1):0===i.indexOf('http://odub.github.io/tawny/')?(window.alert('Browse to a target page to use with magic.import.io and try again!'),!1):void window.open('https://magic.import.io/?site='+encodeURIComponent(i)+'&utm_source=bm&utm_medium=bm&utm_campaign=bm','_blank')}();" onclick="return false;">Extract with import.io</a>
                         <span  id="install-text" class="col-sm-7 col-md-8">
                         <br class="visible-xs spacer"/><span class="hidden-xs">← </span>Drag this to your Bookmarks Bar</span>
                 </div>
