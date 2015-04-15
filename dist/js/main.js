@@ -1,1 +1,0 @@
-var bookmarkletBanner=document.getElementById("bookmarklet-explain"),bookmarkletButton=document.getElementById("bookmarklet-button");bookmarkletButton.addEventListener("mouseover",function(){bookmarkletBanner.className="active"}),bookmarkletButton.addEventListener("mouseout",function(){bookmarkletBanner.className=""});
