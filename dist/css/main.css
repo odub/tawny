@@ -23,6 +23,15 @@ section,
 summary {
   display: block;
 }
+
+
+#bookmarklet-button {
+  z-index: 2000;
+}
+
+
+
+
 audio,
 canvas,
 progress,
@@ -7326,19 +7335,21 @@ select.form-control[multiple] {
 #bookmarklet-explain {
   height: 0;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   width: 100%;
-  background: #e92270;
-  color: white;
+  font-size: 24px;
+
+  color: #d30051;
   text-align: center;
   transition: all 300ms ease-out;
+  z-index: 2000;
 }
 #bookmarklet-explain.active {
-  padding: 0.7rem 0;
-  height: 46px;
+  padding: 1.3rem 0;
+  height: 70px;
 }
 body > .container {
   margin-top: 3rem;
@@ -7353,3 +7364,51 @@ br.spacer {
 br.spacer-small {
   line-height: 3rem;
 }
+
+.disclaimer {
+  font-size: 24px !important;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300 !important;
+  display: inline-block;
+  padding: 0 20px;
+
+
+}
+
+.disclaimer a {
+  opacity: 0.5 !important;
+}
+
+.drag-me {
+  position: relative;
+
+}
+
+#bookmarklet-button {
+  margin-top: -200px;
+}
+
+.drag-me span{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  /* edit: added z-index */
+  z-index: 1;
+
+  /* edit: fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('empty.gif');
+
+}
+.invisible-text {
+  opacity: 0;
+}
+
+.jumbotron-p {
+  margin-bottom: 0 !important;
+}
+
+
