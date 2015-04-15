@@ -7341,12 +7341,18 @@ select.form-control[multiple] {
   top: 0;
   width: 100%;
   font-size: 24px;
-
   color: #d30051;
   text-align: center;
   transition: all 300ms ease-out;
   z-index: 2000;
 }
+
+@media screen and (max-width: 979px) {
+  #bookmarklet-explain {
+    background-color: white;
+  }
+}
+
 #bookmarklet-explain.active {
   padding: 1.3rem 0;
   height: 70px;
