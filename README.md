@@ -36,5 +36,9 @@ The source files for the project reside in the `src` directory. The `gulp` build
 
 * Commit and push the `dist` directory in the state you want to deploy
 * Run `git subtree push --prefix dist origin gh-pages` to push `dist` to the root of the `gh-pages` branch
+ 
+**Note:** The latest clean output from the build script is stored in the branch `gh-pages-clean`. The work currently found on the `gh-pages` branch is a heavily customised design of the installation page, contributed by designer and all-round excellent person [andrewburton88](https://github.com/andrewburton88).
 
 The site at [http://odub.github.io/tawny/](http://odub.github.io/tawny/) should now be the same as the last committed version of the `dist` directory.
+
+#### TODO: Update `src` directory on `master` to so that the build script outputs the same installation page as the updated design on `WEB-318`
